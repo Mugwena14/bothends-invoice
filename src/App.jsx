@@ -14,20 +14,16 @@ function App() {
       document.getElementsByTagName('head')[0].appendChild(link);
     }
 
-    // 2. Set the href to your MKH logo
-    link.href = logoUrl;
     
-    // Optional: Update document title to match portal name
-    document.title = "MKH Management Portal";
+    document.title = "BOTH ENDS PORTAL";
   }, []);
 
   return (
     <div className="min-h-screen bg-slate-50">
       <nav className="bg-mkh-blue p-4 text-white shadow-md">
         <div className="max-w-4xl mx-auto flex items-center gap-3">
-          <img src={logoUrl} alt="Logo" className="w-8 h-8 rounded-full bg-white p-1" />
           <span className="font-bold text-xl uppercase tracking-tight">
-            MKH Management Portal
+            BOTH ENDS PORTAL
           </span>
         </div>
       </nav>
