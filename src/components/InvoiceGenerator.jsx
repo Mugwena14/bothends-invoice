@@ -33,7 +33,7 @@ const InvoiceGenerator = () => {
         {/* Responsive Header */}
         <header className="mb-6 md:mb-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
           <h1 className="flex items-center gap-3 text-2xl md:text-3xl font-black tracking-tight text-mkh-blue">
-            <FileText className="size-6 md:size-8" /> MKH INVOICER
+            <FileText className="size-6 md:size-8" /> BothEnds Invoicer
           </h1>
           <p className="text-xs font-bold uppercase tracking-widest text-slate-400">Internal Billing Portal</p>
         </header>
@@ -118,7 +118,7 @@ const InvoiceGenerator = () => {
             
             <PDFDownloadLink 
               document={<InvoiceTemplate data={data} />} 
-              fileName={`MKH_Invoice_${data.clientName || 'Draft'}.pdf`}
+              fileName={`BothEnds${data.clientName || 'Invoice'}.pdf`}
               className="flex w-full items-center justify-center gap-3 rounded-xl bg-mkh-blue px-6 py-4 md:px-8 text-sm md:text-base font-bold text-white shadow-lg shadow-mkh-blue/20 hover:bg-mkh-cyan transition-all active:scale-95 md:w-auto"
             >
               <Download size={20}/> Download Invoice
